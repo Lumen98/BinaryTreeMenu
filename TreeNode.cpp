@@ -6,8 +6,8 @@
 #include <string>
 using namespace std;
 
-TreeNode::TreeNode(int data) {
-     value = data;
+TreeNode::TreeNode() {
+     int value;
      left = nullptr;
      right = nullptr;
 }

@@ -12,7 +12,7 @@ public:
     TreeNode* left;
     TreeNode* right;
 
-    TreeNode(int value);
+    TreeNode();
 };
 
 

@@ -6,6 +6,7 @@
 #include <iostream>
 #include <string>
 #include "DisplayMenu.h"
+#include "BinaryTree.h"
 #include <limits>
 using namespace std;
 
@@ -13,6 +14,7 @@ using namespace std;
 int main() {
     int menuChoice; // make a menuchoice var
     DisplayMenu m1; // create new objects
+    BinaryTree b1;
 
     do {
         m1.menuMsg();
@@ -25,19 +27,30 @@ int main() {
         }
 
         // switch to handle the user's choice.
-        string input;
+
         switch (menuChoice) {
             case 1: {
-
+                int input;
+                cout << "Please enter the number you want to insert: " << endl;
+                while (!(cin >> input)) {
+                    // validate that the input is a number
+                    cin.clear();
+                    cin.ignore(numeric_limits<std::streamsize>::max(), '\n');
+                    cout << "Enter a number only please. " << endl;
+                }
+                cout << endl;
+                // once input is validated, call method
+                cout << "Adding..." << endl;
+                b1.insertNode(input);
                 break;
             }
             case 2: {
-
+                b1.display();
                 break;
             }
 
             case 3: {
-
+                b1.displayNumberOfLeafs();
                 break;
             }
             case 4: {

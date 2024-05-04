@@ -15,6 +15,12 @@ private:
 public:
     BinaryTree();
     ~BinaryTree();
+    void insertNode(int num);
+    void insert(TreeNode *&nodePtr, TreeNode *&newNode);
+    void displayTree(TreeNode* nodePtr) const;
+    int leafCounter(TreeNode *nodePtr, int count);
+    void displayNumberOfLeafs();
+    void display();
 
 };
 
