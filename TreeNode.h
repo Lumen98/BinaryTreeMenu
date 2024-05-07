@@ -5,13 +5,12 @@
 #ifndef BINARYTREEMENU_TREENODE_H
 #define BINARYTREEMENU_TREENODE_H
 
-
+// node class
 class TreeNode {
 public:
     int value;
     TreeNode* left;
     TreeNode* right;
-
     TreeNode();
 };
 

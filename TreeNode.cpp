@@ -5,7 +5,7 @@
 #include "TreeNode.h"
 #include <string>
 using namespace std;
-
+// node constructor
 TreeNode::TreeNode() {
      int value;
      left = nullptr;

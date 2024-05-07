@@ -5,6 +5,7 @@
 #ifndef BINARYTREEMENU_BINARYTREE_H
 #define BINARYTREEMENU_BINARYTREE_H
 #include "TreeNode.h"
+#include <iostream>
 using namespace std;
 
 
@@ -14,13 +15,18 @@ private:
 
 public:
     BinaryTree();
-    ~BinaryTree();
     void insertNode(int num);
     void insert(TreeNode *&nodePtr, TreeNode *&newNode);
     void displayTree(TreeNode* nodePtr) const;
     int leafCounter(TreeNode *nodePtr, int count);
     void displayNumberOfLeafs();
     void display();
+    int treeHeight(TreeNode *nodePtr, int leftCtr, int rightCtr);
+    void displayHeight();
+    void displayWidth();
+    void populateList(TreeNode* nodePtr, vector<int>& list, int level);
+    int getMaxWidth();
+//    void displayLevel();
 
 };
 

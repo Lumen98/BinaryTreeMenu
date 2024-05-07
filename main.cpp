@@ -54,12 +54,11 @@ int main() {
                 break;
             }
             case 4: {
-
+                b1.displayHeight();
                 break;
             }
             case 5: {
-
-
+                b1.displayWidth();
                 break;
             }
             case 6: {
